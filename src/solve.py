@@ -36,7 +36,7 @@ def solve(data):
     # 1. Sort the power plants by cost per MWh
     # 2. For each power plant, use it to produce as much energy as possible
     # The problem of this approach is that, if the gas and kerosine prices are
-    # respectively very low and very high, the gas power plants won't be used
+    # respectively very low and very high, the gas power plants could maybe not be used
     # because of their minimal power output, leading to the expensive cost of kerosine plants.
     # This is a problem that could be solved by using a mixed integer programming solver and the above formulation.
     load = data["load"]

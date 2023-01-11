@@ -19,8 +19,7 @@ docker run -p 8888:8888 powerplant-coding-challenge
 
 ```bash
 poetry install
-poetry shell
-python main.py
+poetry run python src/main.py
 ```
 
 ## How to use the API
