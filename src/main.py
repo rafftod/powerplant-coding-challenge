@@ -19,4 +19,4 @@ def production_plan(production_payload: ProblemPayload):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", port=8888, reload=True, log_level="info")
+    uvicorn.run("main:app", port=8888, reload=True, log_level="info", host="0.0.0.0")
