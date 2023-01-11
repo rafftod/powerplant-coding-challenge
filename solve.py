@@ -69,7 +69,6 @@ def solve(data):
             # use the plant to fulfill the remaining load
             powerplant["p"] = load
             load = 0
-    print(sum([powerplant["p"] for powerplant in powerplants]))
     return [
         {
             "name": powerplant["name"],
