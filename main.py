@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from validation import ProblemPayload
+from solve import solve
 import uvicorn
 
 app = FastAPI()
@@ -12,8 +14,8 @@ def read_root():
 
 # production plan endpoint
 @app.post("/productionplan")
-def production_plan():
-    return {"Production": "Plan"}
+def production_plan(production_payload: ProblemPayload):
+    return solve(production_payload.dict())
 
 
 if __name__ == "__main__":
